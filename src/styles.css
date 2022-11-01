@@ -91,18 +91,10 @@
 .aditional-info {
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
-.container-main {
-  display: flex;
-  flex-direction: column;
-  border: rgba(255, 255, 255, 0.172) solid;
-  border-radius:15% ;
-  padding: 2rem 1.3rem 2rem 1.2rem;
-  background-color: rgba(10, 10, 10, 0.494);
-}
-
-.container-humidity {
+.container-main, .container-humidity, .container-wind {
   display: flex;
   flex-direction: column;
   border: rgba(255, 255, 255, 0.172) solid;
@@ -111,15 +103,10 @@
   background-color: rgba(10, 10, 10, 0.494);
 }
 
-.container-wind {
-  display: flex;
-  flex-direction: column;
-  border: rgba(255, 255, 255, 0.172) solid;
-  border-radius:15% ;
-  padding: 2rem 1rem 2rem 1rem;
-  background-color: rgba(10, 10, 10, 0.494);
-}
+.container-main{
+    padding: 2rem 1.3rem 2rem 1.2rem;
 
+}
 
 
 .temperature {
