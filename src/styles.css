@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: var(--blanco);
+}
+
+:root {
+  --negro: #333;
+  --blanco: #eee;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../src/assets/Clear.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App h1 {
+  color: rgb(117, 12, 114);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  border-radius: 10%;
+  animation-duration: 5s;
+  animation-name: slidein;
+ 
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+.weather-card {
+  border: 2px solid var(--blanco);
+  width: 25rem;
+  height: 80%;
+  border-radius: .5rem;
+  padding: 4rem 2rem 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(88, 22, 155, 0.75);
+}
+
+.city{
+  font-size:50px;
+}
+
+.info-temperature {
+  display: flex;
+  align-items: center;
+}
+
+.info-temperature .container-img {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.info-temperature .container-degrees {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-temperature .container-degrees .btn-change {
+  margin-top: .5rem;
+  width: 6rem;
+  background-color: orange;
+  color: var(--negro);
+  border: 1px solid var(--negro);
+  padding: .25rem 0;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+.btn-change{
+  
+  background-color: orange;
+  color: var(--negro);
+ 
+}
+
+.aditional-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  border: rgba(255, 255, 255, 0.172) solid;
+  border-radius:15% ;
+  padding: 2rem 1.3rem 2rem 1.2rem;
+  background-color: rgba(10, 10, 10, 0.494);
+}
+
+.container-humidity {
+  display: flex;
+  flex-direction: column;
+  border: rgba(255, 255, 255, 0.172) solid;
+  border-radius:15% ;
+  padding: 2rem 1rem 2rem 1rem;
+  background-color: rgba(10, 10, 10, 0.494);
+}
+
+.container-wind {
+  display: flex;
+  flex-direction: column;
+  border: rgba(255, 255, 255, 0.172) solid;
+  border-radius:15% ;
+  padding: 2rem 1rem 2rem 1rem;
+  background-color: rgba(10, 10, 10, 0.494);
+}
+
+
+
+.temperature {
+  font-size: 4rem;
+}
+
+.icon-weather {
+  height: 10rem;
+}
