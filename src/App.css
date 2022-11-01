@@ -8,9 +8,8 @@
 /* Cuando la pantalla es menor a 900px  (tablets y teléfonos inteligentes)*/
 @media only screen and (max-width : 900px) {
  .App{ width: 95vw;
-  height: 100vh;
+  height: 90vh;
   background-image: url('../src/assets/Clear.gif');
-  background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
   }
@@ -23,9 +22,8 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .App {
     width: 95vw;
-    height: 100vh;
+    height: 90vh;
     background-image: url('../src/assets/Clear.gif');
-    background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
 }
