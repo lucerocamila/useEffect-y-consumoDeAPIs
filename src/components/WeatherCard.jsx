@@ -56,6 +56,7 @@ const WeatherCard = () => {
                     <button onClick={changeTemperatureUnit} className='btn-change'>{isCelsius ? `Change to °F` : `Change to °C`}</button>
                 </div>
             </div>
+            <h2>  Today's</h2>
             <div className="aditional-info">
                 <div className="container-main">
                     <span><b>Condition</b></span>
