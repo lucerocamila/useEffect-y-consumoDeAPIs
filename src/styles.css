@@ -26,7 +26,6 @@
 
 .App h1 {
   color: rgb(117, 12, 114);
-  padding: 1rem;
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
   border-radius: 10%;
@@ -42,7 +41,7 @@
   width: 25rem;
   height: 80%;
   border-radius: .5rem;
-  padding: 4rem 2rem 3rem 1.5rem;
+  padding: 1.4rem 2rem 3rem 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,11 +100,11 @@
   border-radius:15% ;
   padding: 2rem 1rem 2rem 1rem;
   background-color: rgba(10, 10, 10, 0.494);
+  width: 18.5vh;
+  height: 20vh;
 }
-
-.container-main{
-    padding: 2rem 1.3rem 2rem 1.2rem;
-
+.container-sky{
+  text-align: end;
 }
 
 

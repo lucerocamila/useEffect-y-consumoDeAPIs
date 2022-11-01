@@ -24,7 +24,7 @@ const WeatherCard = () => {
         }
     }
 
-    // datos
+    // data
     const country = location.sys?.country;
     const city = location.name;
 
@@ -41,7 +41,10 @@ const WeatherCard = () => {
 
     return (
         <div className='weather-card'>
-            <div className="header">
+            <div className="header"> 
+            <div className="container-sky">
+                    <span><b>{main}</b></span>
+                </div>
                 <span className='city'><i className="fa-solid fa-location-dot"></i> {city}, {country}</span>
             </div>
             <div className="info-temperature">
@@ -50,20 +53,26 @@ const WeatherCard = () => {
                 </div>
                 <div className="container-degrees">
                     <span className='temperature'>{isCelsius ? `${celsius}°C` : `${farenheit}°F`}</span>
-                    <button onClick={changeTemperatureUnit} className='btn-change'>{isCelsius ? `to farenheit` : `to celsius`}</button>
+                    <button onClick={changeTemperatureUnit} className='btn-change'>{isCelsius ? `Change to °F` : `Change to °C`}</button>
                 </div>
             </div>
             <div className="aditional-info">
                 <div className="container-main">
-                    <span><b>{main}</b></span>
+                    <span><b>Condition</b></span>
+                    <i class="fa-brands fa-skyatlas"></i>
+                    <br />
                     <span>{description}</span>
                 </div>
                 <div className="container-humidity">
                     <span><b>Humidity</b></span>
+                    <i class="fa-solid fa-droplet"></i>
+                    <br />
                     <span>{humidity}%</span>
                 </div>
                 <div className="container-wind">
                     <span><b>Wind</b></span>
+                    <i class="fa-solid fa-wind"></i>
+                    <br />
                     <span>{wind} km/h</span>
                 </div>
             </div>
