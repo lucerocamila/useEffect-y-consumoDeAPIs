@@ -26,22 +26,23 @@
 
 .App h1 {
   color: rgb(117, 12, 114);
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Rubik Moonrocks', cursive;
+  font-size: 3rem;
   border-radius: 10%;
-  animation-duration: 3s;
-  animation-name: slidein;
+
  
 }
+
 
 
 
 .weather-card {
   border: 2px solid var(--blanco);
   width: 25rem;
-  height: 80%;
+  height: 50rem;
   border-radius: .5rem;
-  padding: 1.4rem 2rem 3rem 1.5rem;
+  padding: 1rem 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,6 +51,7 @@
 
 .city{
   font-size:50px;
+  font-family: 'Nunito', sans-serif;
 }
 
 .info-temperature {
@@ -86,28 +88,35 @@
   color: var(--negro);
  
 }
-
+h2{
+  font-family: 'Mr Dafoe', cursive;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
 .aditional-info {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
+  grid-gap: 5px;
+
+
 }
 
 .container-main, .container-humidity, .container-wind {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: rgba(255, 255, 255, 0.172) solid;
   border-radius:15% ;
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 7% 5% 7% 5%;
   background-color: rgba(10, 10, 10, 0.494);
   width: 18.5vh;
   height: 20vh;
 }
 .container-sky{
   text-align: end;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: bold;
 }
-
-
 .temperature {
   font-size: 4rem;
 }
