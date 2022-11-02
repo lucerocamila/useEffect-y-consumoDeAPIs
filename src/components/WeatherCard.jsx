@@ -38,12 +38,13 @@ const WeatherCard = () => {
     const description = location.weather?.[0].description;
     const humidity = location.main?.humidity;
     const wind = location.wind?.speed;
+    const mainy = String(main)
 
     return (
         <div className='weather-card'>
             <div className="header"> 
             <div className="container-sky">
-                    <span><b>{main}</b></span>
+                    {main}
                 </div>
                 <span className='city'><i className="fa-solid fa-location-dot"></i> {city}, {country}</span>
             </div>
@@ -74,7 +75,7 @@ const WeatherCard = () => {
                     <span><b>Wind</b></span>
                     <i class="fa-solid fa-wind"></i>
                     <br />
-                    <span>{wind} km/h</span>
+                    <span>{wind}km/h</span>
                 </div>
             </div>
         </div>

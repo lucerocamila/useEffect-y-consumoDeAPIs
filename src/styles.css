@@ -26,7 +26,7 @@
 
 .App h1 {
   color: rgb(117, 12, 114);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-family: 'Rubik Moonrocks', cursive;
   font-size: 3rem;
   border-radius: 10%;
@@ -40,9 +40,9 @@
 .weather-card {
   border: 2px solid var(--blanco);
   width: 25rem;
-  height: 80%;
+  height: 50rem;
   border-radius: .5rem;
-  padding: 1.4rem 2rem 3rem 1.5rem;
+  padding: 1rem 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -94,28 +94,30 @@ h2{
   letter-spacing: 1px;
 }
 .aditional-info {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+
 }
 
 .container-main, .container-humidity, .container-wind {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: rgba(255, 255, 255, 0.172) solid;
   border-radius:15% ;
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 7% 5% 7% 5%;
   background-color: rgba(10, 10, 10, 0.494);
   width: 18.5vh;
   height: 20vh;
 }
 .container-sky{
   text-align: end;
-  font-family: 'Mr Dafoe', cursive;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: bold;
 }
-
-
 .temperature {
   font-size: 4rem;
 }
