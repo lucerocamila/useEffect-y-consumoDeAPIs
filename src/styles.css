@@ -94,10 +94,9 @@ h2{
   letter-spacing: 1px;
 }
 .aditional-info {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   grid-gap: 5px;
-  grid-auto-rows: minmax(100px, auto);
+
 
 }
 
