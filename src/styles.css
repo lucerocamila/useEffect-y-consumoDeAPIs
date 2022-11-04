@@ -123,3 +123,23 @@ font-weight: bold;
 .icon-weather {
   height: 10rem;
 }
+
+/* query */
+
+@media (max-width: 410px) {
+  .weather-card {
+    width: 90%;
+    height: 90%;
+  }
+  .container-main, .container-humidity, .container-wind {
+    width: 12.5vh;
+    height: 16vh;
+  }
+  .aditional-info {
+    grid-gap: 8px;
+    justify-content: center;
+  }
+  .city{
+    font-size:40px;
+  }
+}
